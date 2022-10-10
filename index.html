@@ -85,9 +85,24 @@
     <hr>
     <h2>Volunteering Signups!</h2>
     <form>
-        <label for="fname">First name:</label><br>
-        <label for="lname">Last name:</label><br>
-    </form>
+        <fieldset>
+         <label for="fname">First name:</label><br>
+         <label for="lname">Last name:</label><br>
+         <textarea id="w3review" name="w3review" rows="4" cols="50">Please add ideas for volunteering! </textarea>
+        </fieldset>
+        <datalist id="location options">
+            <option value="Carslbad">
+            <option value="La Jolla">
+            <option value="Poway">
+            <option value="San Diego">
+          </datalist>
+          <select name="times" id="times">
+            <option value="8AM">8AM</option>
+            <option value="10AM">10AM</option>
+            <option value="12PM">12PM</option>
+            <option value="2PM">2PM</option>
+          </select>
+       </form>
 
 <p>Note that the form itself is not visible.</p>
 
@@ -95,14 +110,10 @@
 
 
 
-     <!--   form
+     <!--  
 audio
-fieldset
-input (of types checkbox, radio, text, and date)*
-textarea
-datalist
-select
-option -->
+
+-->
   </body>
   <footer>
       Studio Inc.
