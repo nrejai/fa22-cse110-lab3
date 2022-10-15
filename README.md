@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-# Website Link: https://nrejai.github.io/CSE110-Lab2/
+# Website Link: https://nrejai.github.io/fa22-cse110-lab3/
