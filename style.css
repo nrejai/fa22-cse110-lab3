@@ -1,0 +1,100 @@
+ /* styling sheet for index.html */
+ /*unit? */
+header {
+    /* text */
+    text-decoration: underline;
+    text-align: center;
+    /* display */
+    display: inline;
+    /* position */
+    position: sticky;
+}
+body {
+    /* text */
+    color: hsl(0, 10%, 10%); /* colors - way 3 */
+    text-align: justify;
+    /* fonts */
+    font-family: courier;
+    font-size: 60%;
+    /* display */
+    display: block;
+    /* position */
+    position: relative;
+    /* TO DO: */
+    /* pseudo-class */
+    /* layouts */
+    /* responsiveness ? */
+    /* unit ? */
+    /* use fonts & incorporate css into html file */
+    /* part 2 */
+}
+/* font #1 */
+@font-face {
+    font-family: 'Nanum Myeongjo';
+    font-style: normal;
+    font-weight: 700;
+    src: url(http://fonts.gstatic.com/s/nanummyeongjo/v20/9Bty3DZF0dXLMZlywRbVRNhxy2pXV1Axpfas5fA_eQvhAy_DdAvmOw1YkdrXVGtY.2.woff2) format('woff2');
+}
+
+/* font #2 */
+@font-face {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptmono/v13/9oRONYoBnWILk-9AnCIzM_HxEcn7Hg.woff2) format('woff2');
+}
+
+/* font #3 */
+@font-face {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2) format('woff2');
+}
+/* h1/h2/h3/p */
+
+
+html {
+    box-sizing:border-box;
+}
+.longbox {
+    /* sizing */
+    height: auto;
+    width: 350px;
+    max-width: 400px;
+    min-width: 100px;   
+    inline-size: 350px;
+    height: 150px;
+    block-size: 150px;
+    /* margin */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding */
+    padding-top: 25px;
+    padding-bottom: 25px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+    /* border */
+    border-style: groove;
+    border-color:rgb(83, 105, 110); /* colors - way 1 */
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+.shortbox {
+    width: 200px;
+    inline-size: 200px;
+    height: 50px;
+    block-size: 150px;
+    /* margin */
+    margin: 5px 5px 10px 10px;
+    /* padding */
+    padding: 5px 10x 5x 10x;
+    /* border */
+    border-style: groove;
+    border-color:#808080; /* colors - way 2 */
+    border-width: 5px;
+    border-radius: 10px;
+}
