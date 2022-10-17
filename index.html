@@ -8,16 +8,50 @@
     <style>
         /* inline styling */
         body {background-color: powderblue;} /* background & colors - way 4 */
+        /* class selector */ /*Combining Two Selectors*/
+        h1.large {
+            font-family: 'Nanum Myeongjo';
+            font-size: 300%;
+            text-align: center;
+        }
+        /* id selector */
+        #date {
+            text-align: center;
+        }
+        /* pseudo class selector */
+        button:hover {
+            color: pink;
+        }
+        /* General sibling combinator */
+        div ~ p {
+            background-color: white;
+        }
+        /* Adjacent sibling combinator */
+        h2 + span {
+            font-family: 'PT Mono';
+            background-color:aquamarine;
+        }
+
+        main section {
+            font-family: 'Press Start 2P';
+        }
+
+        .item1 { grid-area: menu; }
+        .item2 { grid-area: right; }
+        .item3 { grid-area: left; }
     </style>
+    
 </head>
 <body>
-    <header>
-        <h1>Team 25 Meeting Notes</h1>
+    <header> 
+        <h1 class = "large"> Team 25 Meeting Notes</h1> 
     </header>
-    <h3> 10/6/22 </h3>
+    <h3 id="date"> 10/6/22 </h3>
     <link rel="icon" type="image" href="hearts-icon.webp">
       <section>
-        <h2>Attendance List</h2>
+          <div b>
+            <h2>Attendance List</h2>
+          </div>
         <ul>
             <li>Anne</li>
             <li>Nikki (<a href="https://nrejai.github.io/lab0/">bio</a>)</li>
@@ -35,7 +69,9 @@
         </span>
         <hr>
         <main>
-            <h2>Roles</h2>
+            <div b>
+                <h2>Roles</h2>
+            </div>
             <ul>
                 <li>Discussion Leader: Anne</li>
                 <li>Notetaker: Sean</li>
@@ -114,7 +150,33 @@
         </fieldset>
        </form>
 
-    <em> Have a great day! :)</em>
+    <h2> BRAINSTORMING ACTIVITY 1: </h2>
+    <div class="flex">
+        <div>IDEA 1</div>
+        <div>IDEA 2</div>
+        <div>IDEA 3</div>  
+    </div>   
+
+    <h2> BRAINSTORMING ACTIVITY 2: </h2>
+    <div class="grid">
+        <div class="item1">IDEA 1 </div>
+        <div class="item2">IDEA 2 </div>
+        <div class="item3">IDEA 3 </div>
+    </div>
+
+    LONG:
+    <hr>
+    <div class = "longbox"> 
+        LONG BOX
+    </div>
+
+    SHORT:
+    <hr>
+    <div class = "shortbox"> 
+        SHORT BOX
+    </div>
+   
+      <em> Have a great day! :)</em>
     <footer>Studio Inc.</footer> 
 </body>
 

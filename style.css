@@ -1,6 +1,6 @@
  /* styling sheet for index.html */
  /*unit? */
-header {
+header, h1, h2 {
     /* text */
     text-decoration: underline;
     text-align: center;
@@ -47,7 +47,6 @@ body {
 }
 /* can add h1/h2/h3/p specifications too */
 
-
 .longbox {
     /* sizing */
     height: auto;
@@ -89,23 +88,14 @@ body {
     border-width: 5px;
     border-radius: 10px;
 }
-.itemF1 {
-    order: 1; /* default is 0 */
+
+.flex {
+    display: flex;
+    background-color:dodgerblue;
+}
+/* Child Combinator */
+.flex > div {
     flex-grow: 1; /* larger weight = more priority in sizing */
-    flex-shrink: 1;
-    flex-basis: auto;
-}
-
-.itemF2 {
-    order: 2; 
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-}
-
-.itemF3 {
-    order: 3;
-    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
 }
@@ -117,25 +107,12 @@ body {
 
 }
 
-.itemG1 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 0;
-    grid-row-end: 3;
+.grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
 }
 
-.itemG2 {
-    grid-column-start: 0;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-.itemG3 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 8;
-}
 /* pseudo-class */
 a:any-link {
     color: purple;
@@ -146,4 +123,12 @@ a:any-link {
     div {
       background:whitesmoke;
     }
+}
+
+* {
+    color: blue;
+  }
+
+div[b] {
+    font-weight:bold;
 }
